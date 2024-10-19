@@ -2189,3 +2189,12 @@ body.is-preload #main .thumb {
 #footer .copyright a {
   color: inherit;
 }
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html, body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
