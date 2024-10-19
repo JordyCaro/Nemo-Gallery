@@ -1,0 +1,28 @@
+---
+import BaseHead from '@/components/BaseHead.astro'
+import Header from '@/components/Header.astro'
+import Footer from '@/components/Footer.astro'
+import Gallery from '@/components/Gallery.astro'
+import ExternalScripts from '@/components/ExternalScripts.astro'
+
+let title = 'Nemo Gallery'
+let description =
+  "Say hello to Nemo Gallery, a gallery developed to share photos of Nemo and showcase my skills as a frontend developer. If you'd like to get in touch with me to develop something like what you see here or any other incredible idea, don't hesitate to contact me."
+---
+
+<!doctype html>
+<html lang="en">
+  <BaseHead
+    title={title}
+    description={description}
+    author={'JORDY'}
+    og={'og-image.jpg'}
+  />
+
+  <body class="is-preload">
+    <Header title={title} />
+    <Footer title={title} description={description} />
+    <Gallery />
+    <ExternalScripts />
+  </body>
+</html>
